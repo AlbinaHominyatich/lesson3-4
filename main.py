@@ -1,6 +1,10 @@
 import random
 class Human:
-    def __init__(self, name = "Корсун-Коршун Ілья Олександрович",job = None,home = None,car = None):
+    def __init__(self,
+                 name = "Корсун-Коршун Ілья Олександрович",
+                 job = None,
+                 home = None,
+                 car = None):
         self.name = name
         self.job = job
         self.home = home
@@ -37,6 +41,9 @@ class Auto:
         self.strength = brand_list[self.brand]['strength']
         self.fuel = brand_list[self.brand]['fuel']
         self.consumption = brand_list[self.brand]['consumption']
+brands_of_car = {"BMW":{'fuel':100, "strength":100, "consumption":6},
+                 "Lanos":{'fuel':70, "strength":60, "consumption":10},
+                 "Lamborgini":{'fuel':150, "strength":130, "consumption":2}}
 
 
 
